@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calci</title>
+</head>
+
+<body>
+    <div>
+        <div>
+            <label>Enter a value</label>
+            <input id="inputA" type="text">
+        </div><br>
+        <div>
+            <label>Enter b value</label>
+            <input id="inputB" type="text">
+        </div><br>
+        <div><button onclick="addition()">ADD</button>
+            <button onclick="subtraction()">SUB</button>
+            <button onclick="multiplication()">MUL</button>
+            <button onclick="divison()">DIV</button>
+
+
+        </div>
+        <p ID="result">RESULT</p>
+    </div>
+    <script>
+        var a = 0;
+        var b = 0;
+
+        var result = 0;
+
+
+
+
+
+
+        function addition() {
+
+            a = parseInt(document.getElementById('inputA').value);
+            b = parseInt(document.getElementById('inputB').value);
+
+            result = a + b;
+
+            document.getElementById('result').innerHTML = "addition of a, b " + result
+
+        }
+
+
+
+
+        function subtraction() {
+
+            a = parseInt(document.getElementById('inputA').value);
+            b = parseInt(document.getElementById('inputB').value);
+
+            result = a - b;
+
+            document.getElementById('result').innerHTML = "addition of a, b " + result
+
+        }
+
+
+
+
+        function multiplication() {
+
+            a = parseInt(document.getElementById('inputA').value);
+            b = parseInt(document.getElementById('inputB').value);
+
+            result = a * b;
+
+            document.getElementById('result').innerHTML = "addition of a, b " + result
+
+        }
+
+        var result = 0;
+
+        function divison() {
+
+            a = parseInt(document.getElementById('inputA').value);
+            b = parseInt(document.getElementById('inputB').value);
+
+            result = a / b;
+
+            document.getElementById('result').innerHTML = "addition of a, b " + result
+
+        }
+    </script>
+</body>
+
+</html>
